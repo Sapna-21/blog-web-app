@@ -1,0 +1,38 @@
+.header {
+    height : 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.publish-btn {
+    margin: 24px 200px;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    margin : 10px auto;
+}
+
+.title {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 6px;
+    width: 890px;
+    word-break: break-word;
+    word-wrap: break-word;
+    line-break: auto;
+    font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif
+}
+
+.body {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    line-height: 32px;
+    width: 900px;
+    height: 450px;
+}

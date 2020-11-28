@@ -1,0 +1,49 @@
+<div class="toolbar">
+    <div class="create-blog">
+     <span>Welcome to Sapna's Blogging Website</span> 
+    </div>
+    <div class="options">
+      <div class="create" (click)="create()">
+        <span>CREATE</span> 
+      </div>
+  
+      <div class="create">
+        <span>LOG IN</span> 
+      </div>
+  
+      <div class="create">
+        <span>SIGNUP</span> 
+      </div>
+    </div>
+</div>
+
+<div class="content" role="main">
+
+    
+    <!-- Resources -->
+    <h2>TRENDING BLOGS</h2>
+    <p>Here are some blogs you might like:</p>
+  
+    <div class="card-container" *ngFor="let blog of blogPosts">
+      <div class="card" (click)="onClick(blog)">
+        <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> -->
+  
+        <div class="blog-text">
+          <div class="blog-title">
+            <span>{{ blog.title }}</span>
+          </div>
+  
+          <div class="blog-content">
+            <span>{{ blog.introLine }}</span>
+          </div>
+        </div>
+  
+        <div class="image-cont">
+          <img class="blog-image" src="{{ blog.imageUrl }}">
+        </div>
+      </div>
+    </div>
+  
+    
+  
+    

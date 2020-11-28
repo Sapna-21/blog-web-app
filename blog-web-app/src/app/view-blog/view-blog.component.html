@@ -1,0 +1,113 @@
+<div class="header">
+
+  <div class="about">
+    <div class="img-cont">
+      <img class="abt-img" src="../assets/images/image15.jpeg">
+    </div>
+
+    <div class="abt">
+      <span>ABOUT </span>
+    </div>
+
+    <div class="archive">
+      <span>ARCHIVE </span>
+    </div>
+
+    <div class="news-letter">
+      <span>NEWSLETTER </span>
+    </div>
+
+  </div>
+
+  
+
+</div>
+
+<div class="content">
+
+  <div class="blog-text">
+    <div class="blog-title">
+      <span>{{ blogPost.title }}</span>
+    </div>
+
+    <div class="blog-introLine">
+      <span>{{ blogPost.introLine }}</span>
+    </div>
+
+    <div class="blog-author">
+      <div class="author-details">
+        <div class="author-img">
+          <img class="athr-img" src="{{ blogPost.authorImg }}">
+        </div>
+
+        <div class="name-date">
+          <div class="name">
+            {{ blogPost.author }}
+          </div>
+
+          <div class="date">
+            {{ blogPost.dateOfPost }}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="share-icon-cont" (click)="onShare()">
+        <i class="share fa fa-share fa-2x" aria-hidden="true"></i>
+      </div>
+
+    </div>
+
+    <div class="image-cont">
+      <img class="image" src="{{ blogPost.imageUrl }}">
+    </div>
+
+    <div class="blog-content">
+      {{ blogPost.content }}
+    </div>
+  </div>
+
+  <div class="buttons-cont">
+    <div class="like-icon-cont" (click)="onClick()">
+      <i *ngIf="liked" class="like fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+      <i *ngIf="!liked" class="like fa fa-2x">&#xf087;</i>
+
+    </div>
+    
+    <div class="comment-icon-cont">
+      <i class="comment fa fa-2x">&#xf0e5;</i>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="text">
+    <div class="ftr-title">
+      Share your thoughts.
+    </div>
+
+    <div class="ftr-content">
+      If you have a story to tell, a perspective to share or knowledge to offer - welcome home.
+      Post your thoughts here for free.Follow the writers, publications, and topics that matter to you,
+      and you’ll see them on your homepage and in your inbox
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="abt-help">
+    <div>
+      <span>About</span>
+    </div>
+
+    <div class="abt">
+      <span>Help</span>
+    </div>
+  </div>
+
+</footer>
